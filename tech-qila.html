@@ -353,8 +353,21 @@
   }
   .team-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+  }
+  .team-grid .team-card:nth-child(3) {
+    grid-column: 1 / 2;
+  }
+  .team-grid .team-card:nth-child(4),
+  .team-grid .team-card:nth-child(5) {
+    grid-column: auto;
+  }
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 768px) {
+    .team-grid { grid-template-columns: repeat(2, 1fr); }
   }
   .team-card {
     background: var(--tag-bg);
@@ -645,10 +658,11 @@ const articles = [
 ];
 
 const team = [
-  { name: '小明', role: '主編 · AI 科技線', initial: '明' },
-  { name: '阿好', role: '生活科技線', initial: '好' },
-  { name: '志偉', role: '裝置 · 趨勢線', initial: '偉' },
-  { name: '雅婷', role: '美編 · 版面設計', initial: '婷' },
+  { name: '章安澈', role: '主編', initial: '安' },
+  { name: '楊雯茹', role: '敘事．資訊編輯', initial: '雯' },
+  { name: '劉佳琪', role: '敘事．資訊編輯', initial: '佳' },
+  { name: '中井穗月', role: '視覺．AI', initial: '穗' },
+  { name: '梁軒綾', role: '視覺．AI．網站', initial: '軒' },
 ];
 
 // ── STATE ──
