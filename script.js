@@ -216,13 +216,12 @@ function openModal(index) {
   document.getElementById('modalTitle').textContent = a.title;
 
   if (a.tabs) {
-    document.getElementById('modalMeta').innerHTML = `
-      <div class="modal-meta-row">
+    document.getElementById('modalMeta').innerHTML = '';
+    document.getElementById('modalBody').innerHTML =
+      `<div class="modal-meta-row" style="margin-bottom:1rem">
         <span>✍️ ${a.author}</span><span>📅 ${a.date}</span><span>⏱ 閱讀約 ${a.read}</span>
       </div>
-    `;
-    document.getElementById('modalBody').innerHTML =
-      `<div class="article-tabs">
+      <div class="article-tabs">
         ${a.tabs.map((t, i) => `<button class="tab-btn" onclick="jumpToSection(${i})">${t.label}</button>`).join('')}
       </div>` +
       a.tabs.map((t, i) => `
@@ -246,7 +245,7 @@ window.jumpToSection = function(i) {
   const target = document.getElementById(`article-section-${i}`);
   const scrollEl = document.querySelector('.modal-scroll');
   if (target && scrollEl) {
-    scrollEl.scrollTo({ top: target.offsetTop - 270, behavior: 'smooth' });
+    scrollEl.scrollTo({ top: target.offsetTop - 60, behavior: 'smooth' });
   }
 };
 
