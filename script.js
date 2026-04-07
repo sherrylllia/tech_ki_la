@@ -218,10 +218,7 @@ function openModal(index) {
   if (a.tabs) {
     document.getElementById('modalMeta').innerHTML = '';
     document.getElementById('modalBody').innerHTML =
-      `<div class="modal-meta-row" style="margin-bottom:1rem">
-        <span>✍️ ${a.author}</span><span>📅 ${a.date}</span><span>⏱ 閱讀約 ${a.read}</span>
-      </div>
-      <div class="article-tabs">
+      `<div class="article-tabs">
         ${a.tabs.map((t, i) => `<button class="tab-btn" onclick="jumpToSection(${i})">${t.label}</button>`).join('')}
       </div>` +
       a.tabs.map((t, i) => `
