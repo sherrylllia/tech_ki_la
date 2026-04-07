@@ -242,7 +242,7 @@ window.jumpToSection = function(i) {
   const target = document.getElementById(`article-section-${i}`);
   const scrollEl = document.querySelector('.modal-scroll');
   if (target && scrollEl) {
-    scrollEl.scrollTo({ top: target.offsetTop - 60, behavior: 'smooth' });
+    scrollEl.scrollTo({ top: target.offsetTop - 270, behavior: 'smooth' });
   }
 };
 
