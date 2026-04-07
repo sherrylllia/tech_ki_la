@@ -437,7 +437,7 @@ footer {
 .modal-scroll {
   overflow-y: auto;
   flex: 1;
-  padding: 0 2.5rem 2.5rem;
+  padding: 1.5rem 2.5rem 2.5rem;
 }
 .modal-scroll p { margin-bottom: 1rem; }
 .modal-body {
@@ -578,8 +578,8 @@ footer {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ── RESPONSIVE ── */
 @media (max-width: 768px) {
+  /* 原本的手機設定... */
   .hero { grid-template-columns: 1fr; gap: 2rem; }
   .articles-grid { grid-template-columns: 1fr; }
   .about-section { grid-template-columns: 1fr; gap: 2rem; }
@@ -587,4 +587,34 @@ footer {
   nav { display: none; }
   footer { flex-direction: column; gap: 0.5rem; text-align: center; }
   .header-search input { width: 120px; }
+
+  /* 手機版 modal */
+  .modal {
+    height: 90vh;
+    width: 92%;
+    border-radius: 16px;
+    align-self: center;
+  }
+  .modal-overlay {
+    align-items: center;
+    padding: 0;
+  }
+  .modal-scroll {
+    padding: 1.5rem 1.25rem 2.5rem;
+  }
+  .article-tabs {
+    padding: 0.75rem 0 0.75rem;
+    margin-top: 0;
+  }
 }
+
+.modal-tab-bar {
+  display: none;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.75rem 2.5rem;
+  border-bottom: 1.5px solid var(--border);
+  background: var(--bg);
+  flex-shrink: 0;
+}
+.modal-tab-bar.has-tabs { display: flex; }

@@ -217,10 +217,11 @@ function openModal(index) {
 
   if (a.tabs) {
     document.getElementById('modalMeta').innerHTML = '';
+    document.getElementById('modalTabBar').innerHTML =
+      a.tabs.map((t, i) => `<button class="tab-btn" onclick="jumpToSection(${i})">${t.label}</button>`).join('');
+    document.getElementById('modalTabBar').classList.add('has-tabs');
+  
     document.getElementById('modalBody').innerHTML =
-      `<div class="article-tabs">
-        ${a.tabs.map((t, i) => `<button class="tab-btn" onclick="jumpToSection(${i})">${t.label}</button>`).join('')}
-      </div>` +
       a.tabs.map((t, i) => `
         <div id="article-section-${i}" class="article-section">
           <h2 class="article-section-title">${t.label}</h2>
@@ -229,6 +230,8 @@ function openModal(index) {
         ${i < a.tabs.length - 1 ? '<hr class="article-divider">' : ''}
       `).join('');
   } else {
+    document.getElementById('modalTabBar').innerHTML = '';
+    document.getElementById('modalTabBar').classList.remove('has-tabs');
     document.getElementById('modalMeta').innerHTML =
       `<div class="modal-meta-row"><span>✍️ ${a.author}</span><span>📅 ${a.date}</span><span>⏱ 閱讀約 ${a.read}</span></div>`;
     document.getElementById('modalBody').innerHTML = `<div class="article-section">${a.body}</div>`;
