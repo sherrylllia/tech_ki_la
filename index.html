@@ -18,12 +18,13 @@
   </a>
   <nav>
     <button class="active" onclick="filterCategory('all', this)">全部</button>
-    <button onclick="filterCategory('AI', this)">人工智慧</button>
-    <button onclick="filterCategory('生活科技', this)">生活科技</button>
+    <!-- <button onclick="filterCategory('AI', this)">人工智慧</button> -->
+    <!-- <button onclick="filterCategory('生活科技', this)">生活科技</button> -->
     <button onclick="filterCategory('未來趨勢', this)">未來趨勢</button>
-    <button onclick="filterCategory('數據', this)">數據</button>
+    <!-- <button onclick="filterCategory('數據', this)">數據</button> -->
     <button onclick="scrollToAbout()">關於我們</button>
   </nav>
+  
   <div class="header-search">
     <span class="search-icon">🔍</span>
     <input type="text" id="searchInput" placeholder="搜尋文章…" oninput="handleSearch()">
@@ -58,11 +59,11 @@
 
 <div class="tags-bar" id="tagsBar">
   <button class="tag-btn active" onclick="filterTag('全部', this)">全部</button>
-  <button class="tag-btn" onclick="filterTag('AI', this)">🤖 人工智慧</button>
-  <button class="tag-btn" onclick="filterTag('生活科技', this)">📱 生活科技</button>
+  <!-- <button class="tag-btn" onclick="filterTag('AI', this)">🤖 人工智慧</button> -->
+  <!-- <button class="tag-btn" onclick="filterTag('生活科技', this)">📱 生活科技</button> -->
   <button class="tag-btn" onclick="filterTag('未來趨勢', this)">🚀 未來趨勢</button>
-  <button class="tag-btn" onclick="filterTag('數據', this)">📊 數據</button>
-  <button class="tag-btn" onclick="filterTag('裝置', this)">💡 裝置</button>
+  <!-- <button class="tag-btn" onclick="filterTag('數據', this)">📊 數據</button> -->
+  <!-- <button class="tag-btn" onclick="filterTag('裝置', this)">💡 裝置</button> -->
 </div>
 
 <div class="articles-grid" id="articlesGrid"></div>
