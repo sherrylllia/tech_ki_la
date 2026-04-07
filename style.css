@@ -414,19 +414,7 @@ footer {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
-.modal-close {
-  position: absolute;
-  top: 1.25rem; right: 1.25rem;
-  background: var(--tag-bg);
-  border: none;
-  width: 36px; height: 36px;
-  border-radius: 50%;
-  font-size: 1.2rem;
-  cursor: pointer;
-  display: flex; align-items: center; justify-content: center;
-  transition: background 0.2s;
-}
-.modal-close:hover { background: var(--border); }
+
 .modal-category { margin-bottom: 0.75rem; }
 .modal-title {
   font-size: 1.8rem;
