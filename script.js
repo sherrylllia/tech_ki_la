@@ -135,6 +135,22 @@ const articles = [
         body: `
           <p>也許沒有絕對的對立。縱觀整個相容系統的發展歷史，一開始的封閉和後來選擇的開放，似乎是整個產業、科技發展在推動。從 IBM 的角度來看，如許博士所說，開放是必不得已的決定，不是為了與同業作對，而是在這個快速發展的世界裡，想取得先機。</p>
           <p>回望這段歷史，「獲勝」的關鍵並不是選擇哪一個陣營。就好像歷史學中的「分久必合，合久必分」，科技發展在過去和未來並沒有太大的區別，一切都還是會重演，未來可能會變成開放和封閉互相合作的局面。</p>
+          <h3 class="article-h3">附錄：AI 工具使用說明</h3>
+          <div class="article-table-wrap">
+            <table class="article-table">
+              <thead>
+                <tr><th>項目</th><th>用途</th><th>AI 工具</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>報導企劃</td><td>調整架構</td><td>ChatGPT</td></tr>
+                <tr><td style="border-bottom:none">文字報導</td><td>整理資料</td><td>ChatGPT / Gemini</td></tr>
+                <tr><td style="border-top:none; border-bottom"></td><td>潤飾文字</td><td>ChatGPT</td></tr>
+                <tr><td style="border-bottom:none">影音報導</td><td>調整講稿架構</td><td>Claude AI</td></tr>
+                <tr><td style="border-top:none; border-bottom"></td><td>生成圖片</td><td>ChatGPT</td></tr>
+                <tr><td>網站</td><td>生成架構</td><td>Claude Code</td></tr>
+              </tbody>
+            </table>
+          </div>
         `
       }
     ]
