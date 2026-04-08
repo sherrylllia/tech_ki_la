@@ -25,7 +25,7 @@ const articles = [
         label: '科技過去不是這樣想的那樣',
         body: `
           <div class="article-video">
-            <iframe width="100%" height="400" src="https://youtu.be/6FoWxyJfF2I" frameborder="0" allowfullscreen></iframe>
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/6FoWxyJfF2I" frameborder="0" allowfullscreen></iframe>
           </div>
           <p>在今日，當我們談論「電腦（Computer）」時，腦中浮現的是輕薄的筆電或手機。但在 80 年前，如果你在 NASA 喊一聲：「Computer，過來一下！」走過來的會是一位拿著鉛筆與計算表的女性。</p>
           <p>這是一段關於權力、速度與「意外」的歷史。我們將帶領讀者看穿科技發展的迷霧：看藍色巨人 IBM 如何靠著一場豪賭定義了辦公室，卻又如何在那場名為「開放」的遊戲中，親手交出了王座。</p>
