@@ -19,6 +19,16 @@ const articles = [
           <p>買了之後，你是否有這樣的經驗？同事或同學透過電子郵件、通訊軟體，傳來要修改的專案、報告，你點開那個結尾是 .ppt 或 .word 的檔案，就算不同人，不同時，可以透過同一個軟體，看到、編輯同一份檔案。</p>
           <p>而你曾想過這一切的起源嗎？</p>
           <p>《Tech 起啦》將會透過三則報導，從歷史、生活、社會等層面，結合 Deep Blue 之父許峰雄博士及多位不同年齡層的使用者的訪談，探討 PC 時代的演進及影響。</p>
+          <div class="article-infobox">
+            <div class="infobox-title">🎙️ 本篇文章受訪專家小百科</div>
+            <div style="display:flex; gap:1rem; align-items:flex-start; margin-top:0.5rem">
+              <img src="CB.jpg" style="width:80px; height:80px; border-radius:50%; object-fit:cover; flex-shrink:0;">
+              <div>
+                <p><strong>許峰雄博士</strong>，綽號：Crazy Bird, CB。台裔美國人，電腦科學家。</p>
+                <p style="margin-top:0.5rem">許博士開發超級電腦深思，首次擊敗西洋棋大師本特．拉爾森。他也是深藍（Deep Blue）的創造者及主要設計者，於 1997 年 5 月 11 日擊敗西洋棋王卡斯帕羅夫。</p>
+              </div>
+            </div>
+          </div>
         `
       },
       {
