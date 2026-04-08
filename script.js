@@ -135,7 +135,7 @@ const articles = [
         body: `
           <p>也許沒有絕對的對立。縱觀整個相容系統的發展歷史，一開始的封閉和後來選擇的開放，似乎是整個產業、科技發展在推動。從 IBM 的角度來看，如許博士所說，開放是必不得已的決定，不是為了與同業作對，而是在這個快速發展的世界裡，想取得先機。</p>
           <p>回望這段歷史，「獲勝」的關鍵並不是選擇哪一個陣營。就好像歷史學中的「分久必合，合久必分」，科技發展在過去和未來並沒有太大的區別，一切都還是會重演，未來可能會變成開放和封閉互相合作的局面。</p>
-          <h3 class="article-h3">附錄：AI 工具使用說明</h3>
+          <h3 class="article-h3">附錄一：AI 工具使用說明</h3>
           <div class="article-table-wrap">
             <table class="article-table">
               <thead>
@@ -150,6 +150,63 @@ const articles = [
                 <tr><td>網站</td><td>生成架構</td><td>Claude Code</td></tr>
               </tbody>
             </table>
+          </div>
+          <h3 class="article-h3">附錄二：參考資料</h3>
+          <div style="display:flex; flex-direction:column; gap:0.75rem; margin-top:1rem;">
+
+            <div style="border-left:3px solid var(--accent); padding:0.6rem 1rem; background:var(--tag-bg); border-radius:0 8px 8px 0;">
+              <div style="font-size:0.75rem; color:var(--ink-light); margin-bottom:0.25rem;">人類計算員歷史</div>
+              <a href="https://www.nasa.gov/centers-and-facilities/jpl/when-computers-were-human/" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none;">When Computers Were Human</a>
+            </div>
+
+            <div style="border-left:3px solid var(--accent); padding:0.6rem 1rem; background:var(--tag-bg); border-radius:0 8px 8px 0;">
+              <div style="font-size:0.75rem; color:var(--ink-light); margin-bottom:0.25rem;">ENIAC 與彈道分析</div>
+              <a href="https://ahf.nuclearmuseum.org/ahf/history/computing-and-manhattan-project/" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none; display:block;">Computing and the Manhattan Project</a>
+              <a href="https://ahf.nuclearmuseum.org/ahf/history/manhattan-project/" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none; display:block; margin-top:0.25rem;">The Manhattan Project</a>
+            </div>
+
+            <div style="border-left:3px solid var(--accent); padding:0.6rem 1rem; background:var(--tag-bg); border-radius:0 8px 8px 0;">
+              <div style="font-size:0.75rem; color:var(--ink-light); margin-bottom:0.25rem;">IBM 打孔機</div>
+              <a href="https://www.ibm.com/history/social-security-act" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none;">The birth of Social Security</a>
+            </div>
+
+            <div style="border-left:3px solid var(--accent); padding:0.6rem 1rem; background:var(--tag-bg); border-radius:0 8px 8px 0;">
+              <div style="font-size:0.75rem; color:var(--ink-light); margin-bottom:0.25rem;">IBM 打字機</div>
+              <a href="https://www.ibm.com/history/selectric" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none; display:block;">The IBM Selectric</a>
+              <a href="https://www.ibm.com/history/system-360" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none; display:block; margin-top:0.25rem;">The IBM System/360</a>
+            </div>
+
+            <div style="border-left:3px solid var(--accent); padding:0.6rem 1rem; background:var(--tag-bg); border-radius:0 8px 8px 0;">
+              <div style="font-size:0.75rem; color:var(--ink-light); margin-bottom:0.25rem;">IBM PC</div>
+              <a href="https://www.ibm.com/history/personal-computer" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none; display:block;">IBM PC</a>
+              <a href="https://archive.org/details/bitsavers_ibmpcpc602renceAug81_17295874" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none; display:block; margin-top:0.25rem;">IBM PC 技術參考手冊（1981 年 8 月版）</a>
+            </div>
+
+            <div style="border-left:3px solid var(--accent); padding:0.6rem 1rem; background:var(--tag-bg); border-radius:0 8px 8px 0;">
+              <div style="font-size:0.75rem; color:var(--ink-light); margin-bottom:0.25rem;">Compaq 逆向工程</div>
+              <a href="https://www.amazon.com/Open-Compaq-Domination-Helped-Computing-ebook/dp/B00DTEZ56I" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none; display:block;">Compaq 創辦人回憶錄</a>
+              <a href="https://www.ntari.org/post/how-clean-room-reverse-engineering-built-the-modern-tech-industry" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none; display:block; margin-top:0.25rem;">How Clean Room Reverse Engineering Built the Modern Tech Industry</a>
+              <a href="https://www.pcmag.com/encyclopedia/term/clean-room-technique" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none; display:block; margin-top:0.25rem;">Clean room technique</a>
+            </div>
+
+            <div style="border-left:3px solid var(--accent); padding:0.6rem 1rem; background:var(--tag-bg); border-radius:0 8px 8px 0;">
+              <div style="font-size:0.75rem; color:var(--ink-light); margin-bottom:0.25rem;">Altair 8800</div>
+              <a href="https://americanhistory.si.edu/collections/object/nmah_334396" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none; display:block;">Altair 8800</a>
+              <a href="https://www.worldradiohistory.com/Archive-Poptronics/70s/1975/Poptronics-1975-01.pdf" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none; display:block; margin-top:0.25rem;">《大眾電子》雜誌對於這個 DIY 套件的報導</a>
+            </div>
+
+            <div style="border-left:3px solid var(--accent); padding:0.6rem 1rem; background:var(--tag-bg); border-radius:0 8px 8px 0;">
+              <div style="font-size:0.75rem; color:var(--ink-light); margin-bottom:0.25rem;">Xerox PARC</div>
+              <a href="https://www.computerhistory.org/revolution/input-output/14/348" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none; display:block;">Xerox PARC</a>
+              <a href="https://medium.com/%E5%AD%B8%E8%A1%93%E8%AA%AA%E6%9B%B8%E4%BA%BA/%E5%85%A8%E9%8C%84-parc-%E8%A6%96%E7%AA%97-%E6%BB%91%E9%BC%A0-%E7%89%A9%E4%BB%B6%E5%B0%8E%E5%90%91-%E8%83%8C%E5%BE%8C%E7%9A%84%E8%8B%B1%E9%9B%84%E4%BA%BA%E7%89%A9%E8%AA%95%E7%94%9F%E5%9C%B0-5539508256f6" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none; display:block; margin-top:0.25rem;">施樂的視窗、滑鼠、物件導向</a>
+            </div>
+
+            <div style="border-left:3px solid var(--accent); padding:0.6rem 1rem; background:var(--tag-bg); border-radius:0 8px 8px 0;">
+              <div style="font-size:0.75rem; color:var(--ink-light); margin-bottom:0.25rem;">IBM PC 部門出售</div>
+              <a href="https://dankpads.com/uncategorized/thinkpad-history-chapter-1-ibm-pc/" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none; display:block;">ThinkPad History Chapter 1 – IBM PC</a>
+              <a href="https://www.ithome.com.tw/news/27034" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none; display:block; margin-top:0.25rem;">聯想 17.5 億美元買 IBM PC 部門</a>
+            </div>
+
           </div>
         `
       }

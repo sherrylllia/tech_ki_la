@@ -553,7 +553,7 @@ footer {
   vertical-align: top;
   line-height: 1.7;
 }
-
+.article-table tr:nth-child(even) td { background: var(--tag-bg); }
 .table-caption {
   font-size: 0.78rem;
   color: var(--ink-light);
