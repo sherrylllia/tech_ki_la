@@ -587,7 +587,7 @@ footer {
   .team-grid { grid-template-columns: 1fr 1fr; }
   nav { display: none; }
   footer { flex-direction: column; gap: 0.5rem; text-align: center; }
-  .header-search input { width: 120px; }
+  .header-search input { width: 92%; }
 
   /* 手機版 modal */
   .modal {
