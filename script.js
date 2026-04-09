@@ -127,7 +127,7 @@ const articles = [
           <h3 class="article-h3">▌今天與未來</h3>
           <p>開放與封閉的競爭仍持續重演：Android 與 iOS、AI 的開源與封閉模型之爭。Android 以開放架構取得較高市佔，iOS 則以封閉生態創造高利潤；AI 領域中，封閉模型門檻低但成本高，開源模型則相反。</p>
           <p>至於未來趨勢，可能走向混合模式。為提升 AI 效能，原本開放的企業也開始自研晶片（如 Google、Amazon）；同時，雲端運算也降低使用者對單一系統的依賴。</p>
-          <div class="article-quote">「開放系統和封閉系統有不同的問題。iOS 想要解決所有問題，這限制了 Apple 的市場大小。但 iPhone 拿了很高的 profit。所以看公司怎麼做，好壞很難講，as a consumer 喜歡開放系統，但不是所有的 consumer 都喜歡。」<br><span style="font-size:0.85rem;opacity:0.7">—— 許峰雄博士</span></div>
+          <div class="article-quote">「開放 vs 封閉系統各有取捨。Apple（iOS）走的是封閉系統路線，想要把所有體驗都掌控在自己手裡。這樣做的代價是市場規模受限——不是所有人都買單。但好處是利潤極高。所以這沒有標準答案：從商業角度來看，Apple 的策略很成功；但從消費者角度來看，開放系統（如 Android）給了更多自由，雖然不是每個人都在乎這件事。」<br><span style="font-size:0.85rem;opacity:0.7">—— 許峰雄博士</span></div>
         `
       },
       {
