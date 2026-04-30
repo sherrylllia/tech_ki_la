@@ -212,6 +212,32 @@ const articles = [
       }
     ]
   }
+  ,
+  {
+    category: '社群科技',
+    catClass: 'cat-social',
+    catLabel: '社群科技',
+    title: '如何創造一個更好的網路社群環境？',
+    excerpt: '演算法、品味文化、FOMO、網紅經濟⋯⋯我們同時是受害者也是加害者。這是一場關於數位生活的深度對話。',
+    author: '全組',
+    date: '2026.04',
+    read: '10 分鐘',
+    igProfile: {
+      username: 'tech.qila',
+      bio: '介紹文字待補充',
+      posts: [
+        { id: 1, title: '演算法是什麼？背後邏輯是什麼？', author: '劉佳琪', images: [], caption: '內文待補充' },
+        { id: 2, title: '平台公司如何設計演算法？', author: '中井穗月', images: [], caption: '內文待補充' },
+        { id: 3, title: '社群媒體與品味文化', author: '劉佳琪', images: [], caption: '內文待補充' },
+        { id: 4, title: '數位環境的共犯結構：我們同時是受害者也是加害者！', author: '全組', images: [], caption: '內文待補充' },
+        { id: 5, title: '定義演變', author: '中井穗月', images: [], caption: '內文待補充' },
+        { id: 6, title: 'FOMO、身分表演以及比較心理', author: '章安澈', images: [], caption: '內文待補充' },
+        { id: 7, title: '網紅經濟：創作者的自由還是新型剝削？', author: '梁軒綾', images: [], caption: '內文待補充' },
+        { id: 8, title: '訪談、我們的觀點、回應核心命題', author: '章安澈', images: [], caption: '內文待補充' },
+        { id: 9, title: 'AI 使用紀錄', author: '全組', images: [], caption: '內文待補充' }
+      ]
+    }
+  }
 ];
 
 const team = [
@@ -298,12 +324,22 @@ function openModal(index) {
     `<span class="card-category ${a.catClass}">${a.catLabel}</span>`;
   document.getElementById('modalTitle').textContent = a.title;
 
+  // IG Profile 類型
+  if (a.igProfile) {
+    document.getElementById('modalTabBar').innerHTML = '';
+    document.getElementById('modalTabBar').classList.remove('has-tabs');
+    document.getElementById('modalMeta').innerHTML = '';
+    document.getElementById('modalBody').innerHTML = renderIgProfile(a);
+    document.getElementById('modalOverlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+    return;
+  }
+
   if (a.tabs) {
     document.getElementById('modalMeta').innerHTML = '';
     document.getElementById('modalTabBar').innerHTML =
       a.tabs.map((t, i) => `<button class="tab-btn" onclick="jumpToSection(${i})">${t.label}</button>`).join('');
     document.getElementById('modalTabBar').classList.add('has-tabs');
-  
     document.getElementById('modalBody').innerHTML =
       a.tabs.map((t, i) => `
         <div id="article-section-${i}" class="article-section">
@@ -323,6 +359,110 @@ function openModal(index) {
   document.getElementById('modalOverlay').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
+
+// ── IG PROFILE ──
+function renderIgProfile(a) {
+  const ig = a.igProfile;
+  const gridItems = ig.posts.map((post, i) => {
+    const hasImg = post.images && post.images.length > 0;
+    return `
+      <div class="ig-grid-item" onclick="openIgPost(${articles.indexOf(a)}, ${i})">
+        ${hasImg
+          ? `<img src="${post.images[0]}" alt="${post.title}">`
+          : `<div class="ig-grid-placeholder">
+               <span class="ig-grid-num">${String(i + 1).padStart(2, '0')}</span>
+               <span>${post.title}</span>
+             </div>`
+        }
+      </div>
+    `;
+  }).join('');
+
+  return `
+    <div class="ig-profile-header">
+      <div class="ig-avatar">📱</div>
+      <div class="ig-profile-info">
+        <div class="ig-username">${ig.username}</div>
+        <div class="ig-stats">
+          <div class="ig-stat"><strong>${ig.posts.length}</strong><span>篇貼文</span></div>
+          <div class="ig-stat"><strong>312</strong><span>位粉絲</span></div>
+          <div class="ig-stat"><strong>128</strong><span>追蹤中</span></div>
+        </div>
+        <div class="ig-display-name">Tech 起拉</div>
+        <div class="ig-bio">${ig.bio}</div>
+      </div>
+    </div>
+    <div class="ig-grid-tabs">
+      <div class="ig-grid-tab active">⊞</div>
+    </div>
+    <div class="ig-grid">${gridItems}</div>
+    <div class="ig-post-overlay" id="igPostOverlay" onclick="closeIgPostOnOverlay(event)">
+      <div class="ig-post" id="igPostContent"></div>
+    </div>
+  `;
+}
+
+window.openIgPost = function(articleIndex, postIndex) {
+  const post = articles[articleIndex].igProfile.posts[postIndex];
+  let currentSlide = 0;
+  const total = post.images && post.images.length > 0 ? post.images.length : 1;
+
+  function renderPost() {
+    const slides = total === 1 && (!post.images || post.images.length === 0)
+      ? `<div class="ig-post-img-slide">圖片待補充</div>`
+      : post.images.map(src => `<div class="ig-post-img-slide"><img src="${src}" alt=""></div>`).join('');
+
+    const dots = total > 1
+      ? `<div class="ig-post-dots">${Array.from({length: total}, (_, i) =>
+          `<div class="ig-post-dot ${i === currentSlide ? 'active' : ''}" onclick="goIgSlide(${i})"></div>`
+        ).join('')}</div>` : '';
+
+    const navBtns = total > 1 ? `
+      <button class="ig-post-nav prev" onclick="prevIgSlide()">‹</button>
+      <button class="ig-post-nav next" onclick="nextIgSlide()">›</button>
+    ` : '';
+
+    document.getElementById('igPostContent').innerHTML = `
+      <div class="ig-post-images">
+        <div class="ig-post-img-track" id="igImgTrack" style="transform:translateX(-${currentSlide * 100}%)">
+          ${slides}
+        </div>
+        ${navBtns}
+        ${dots}
+      </div>
+      <div class="ig-post-content">
+        <div class="ig-post-header">
+          <div class="ig-post-user">
+            <div class="ig-post-avatar">TQ</div>
+            <div class="ig-post-username">tech.kila</div>
+          </div>
+          <button class="ig-post-close" onclick="closeIgPost()">✕</button>
+        </div>
+        <div class="ig-post-body">
+          <div class="ig-post-title">${post.title}</div>
+          <div class="ig-post-author">✍️ ${post.author}</div>
+          <div class="ig-post-caption">${post.caption}</div>
+        </div>
+      </div>
+    `;
+    document.getElementById('igPostOverlay').classList.add('open');
+  }
+
+  window.prevIgSlide = function() { currentSlide = Math.max(0, currentSlide - 1); renderPost(); };
+  window.nextIgSlide = function() { currentSlide = Math.min(total - 1, currentSlide + 1); renderPost(); };
+  window.goIgSlide = function(i) { currentSlide = i; renderPost(); };
+
+  renderPost();
+};
+
+window.closeIgPost = function() {
+  const overlay = document.getElementById('igPostOverlay');
+  if (overlay) overlay.classList.remove('open');
+};
+
+window.closeIgPostOnOverlay = function(e) {
+  if (e.target === document.getElementById('igPostOverlay')) closeIgPost();
+};
 
 window.jumpToSection = function(i) {
   const target = document.getElementById(`article-section-${i}`);
