@@ -734,6 +734,7 @@ footer {
 }
 .ig-post-images {
   background: #000;
+  top: 13%;
   position: relative;
   aspect-ratio: 1;
   overflow: hidden;
