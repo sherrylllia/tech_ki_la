@@ -438,7 +438,7 @@ const articles = [
 
           我們也詢問現在網路媒體怎麼在流量導向的世界生存，是否訂閱制能成為解方，王志仁認為要維持高品質的內容，就需要完整的編採團隊，台灣有媒體實施訂閱制（報導者和天下），但無法用訂閱收入支撐整個團隊，因為讀者會下意識認為網路上的內容應該會是免費。媒體必須維持高品質內容來吸引讀者，但不能指望靠讀者在線上付費來支撐公司，而是把他的關注跟信任轉化為其他變現方式，例如：策展、活動、課程。以《數位時代》為例，一年舉辦超過100場活動，包含 30 人的小聚會到 300 人的論壇，這些非傳統項目現在佔《數位時代》的收入約 70%，傳統廣告不到 30%。` },
                   
-        { id: 9, title: 'AI 使用紀錄', author: '全組', images: ['project2/AI.png'], caption: '內文待補充' }
+          { id: 9, title: 'AI 使用紀錄', author: '全組', images: ['project2/AI.png'], caption: 'AI 使用紀錄：https://docs.google.com/document/d/1-3waA7T1e62TNjnu4CRqoQV1_Xnw_1GZ0KMwcs-2VBU/edit?tab=t.bxjk0zfeaevj' }
       ]
     }
   }
@@ -645,7 +645,7 @@ window.openIgPost = function(articleIndex, postIndex) {
         <div class="ig-post-body">
           <div class="ig-post-title">${post.title}</div>
           <div class="ig-post-author">✍️ ${post.author}</div>
-          <div class="ig-post-caption">${post.caption}</div>
+          <div class="ig-post-caption">${post.caption.replace(/(https?:\/\/[^\s]+)/g, '<a href="$1" target="_blank" style="color:var(--accent2);">$1</a>')}</div>
         </div>
       </div>
     `;
