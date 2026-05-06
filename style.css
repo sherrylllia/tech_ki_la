@@ -638,7 +638,6 @@ footer {
   font-size: 2rem;
   flex-shrink: 0;
   border: 3px solid white;
-  box-shadow: 0 0 0 2px var(--accent);
 }
 .ig-profile-info { flex: 1; }
 .ig-username {

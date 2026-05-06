@@ -584,7 +584,7 @@ function renderIgProfile(a) {
 
   return `
     <div class="ig-profile-header">
-      <div class="ig-avatar">📱</div>
+      <div class="ig-avatar"><img src="project2/profile.png" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></div>
       <div class="ig-profile-info">
         <div class="ig-username">${ig.username}</div>
         <div class="ig-display-name">Tech 起拉</div>
