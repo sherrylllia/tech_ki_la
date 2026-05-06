@@ -223,7 +223,7 @@ const articles = [
     date: '2026.04',
     read: '10 分鐘',
     igProfile: {
-      username: 'tech.qila',
+      username: 'tech.kila',
       bio: 'Tech 起拉 是一個由政大廣告系學生組成的科技科普專欄，我們相信科技知識不應該只屬於工程師。無論你是文組、商科、還是對科技完全陌生，我們都想讓你讀完之後說：「原來如此！」我們的文章風格輕鬆、比喻直白，盡量少用術語，多用生活例子。科技很有趣，我們只是想讓更多人發現這件事。',
       posts: [
         { id: 1, title: '演算法科普：從花拉子米到同溫層', author: '劉佳琪', images: ['project2/演算法科普/演算法科普-1.png', 'project2/演算法科普/演算法科普-2.png', 'project2/演算法科普/演算法科普-3.png', 'project2/演算法科普/演算法科普-4.png'], 
