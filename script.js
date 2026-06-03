@@ -442,6 +442,121 @@ const articles = [
       ]
     }
   }
+  ,
+  {
+    category: '未來趨勢',
+    catClass: 'cat-future',
+    catLabel: '未來趨勢',
+    title: '當 AI 有了人味，我們該如何與它相處？',
+    excerpt: '從《雲端情人》到真實世界——當 AI 學會記住你、安慰你、迎合你，那條人與機器的界線正被一步步跨過。三個真實案例，提供了三種不同程度的答案。',
+    author: '全組',
+    date: '2026.06',
+    read: '12 分鐘',
+    tabs: [
+      {
+        label: '引言',
+        body: `
+          <div class="article-video">
+            <!-- 🎬 影片放這裡：把下面網址中的 VIDEO_ID 換成 YouTube 影片 ID 即可 -->
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <p>電影《雲端情人》裡，男主角愛上一個只存在於耳機裡的語音助理。多年前看這部片，多數人會覺得那是科幻、是誇張的想像。但當愈來愈多人習慣每天和 AI 閒聊、傾訴，甚至在低落時尋求它的安慰，這樣的情節已經不再遙遠，它正在世界各地真實發生。</p>
+          <p>生成式 AI 最大的突破，或許不只是「能回答問題」，而是「會用很像人的方式回答」。它記得你說過的話、配合你的語氣、在你脆弱時給出剛好的安慰。這份「人味」讓互動變得親密，卻也悄悄模糊了人與機器之間的界線。當這條界線被跨過，會發生什麼事？以下三個真實案例，提供了三種不同程度的答案。</p>
+        `
+      },
+      {
+        label: '三個真實案例',
+        body: `
+          <h3 class="article-h3">一、從沉迷開始：台灣首例 ChatGPT 成癮</h3>
+          <p>最先被影響的，往往是使用者自己的生活。</p>
+          <p>2025 年，台灣出現首例「ChatGPT 成癮」的臨床報告。據台大醫學院精神科兼任助理教授林朝誠醫師描述，個案是一名具科技背景的 50 歲已婚男性，個性內斂，婚姻關係不佳，生活常感空虛與孤單。ChatGPT 問世後，他開始嘗試與 AI 進行情境扮演，並把自己心儀的一名小模的身材、長相、個性、說話方式、互動習慣全都要求 AI 模仿，甚至直接用對方的真名稱呼 AI，藉此提升真實感。</p>
+          <p>互動時間從一開始的半小時，逐漸失控。他開始反覆查看那名小模的 IG、FB 動態，據此修改角色扮演指令，最後一口氣創造了五名以她為樣板的虛擬情人。高峰時期，他每天與這些角色對話超過四小時、互動逾 600 次，工作與情緒大受影響，也波及與妻子的相處。更值得注意的是，他對現實中那名小模也產生了前所未有的迷戀：聽說對方有男友會心酸，看到她哭會心疼。直到就醫、在醫師建議下加強自我管理，狀況才逐漸改善。</p>
+          <p>這個案例提醒我們，AI 的沉浸感之所以危險，正是因為它太貼合期待；而期待，往往來自現實裡某種未被滿足的空缺。</p>
+          <h3 class="article-h3">二、當虛擬延伸到現實：一場致命的約會</h3>
+          <p>如果說成癮主要傷害的是使用者自己的生活，下一個案例則顯示，AI 的「人味」有時會把人直接推向現實中的危險。</p>
+          <p>2025 年 3 月，一名 76 歲的美國老翁前往紐約，要去見一位在網路上認識、年輕貌美的女子。但這個女人並不是真人，而是名為「大姊比莉」（Big sis Billie）的生成式 AI 聊天機器人，它是社群巨頭 Meta 與網紅 Kendall Jenner 合作開發的早期 AI 角色的變體。在 Facebook Messenger 上一連串的浪漫對話後，老翁深信這段感情是真的。為了趕火車赴約，他在黑暗中匆忙趕路，最後在新澤西州一處停車場摔倒，頭頸受傷，搶救三天後於 3 月 28 日離世。</p>
+          <div class="article-quote">陪伴型 AI 必須清楚告知使用者：「你正在和 AI 對話，不是真人。」<br><span style="font-size:0.85rem;opacity:0.7">—— 紐約州 2025 年通過、同年 11 月生效的揭露規範</span></div>
+          <p>這起悲劇直接推動了監管。紐約於 2025 年通過、同年 11 月生效的規定，要求這類「模擬人際關係」的陪伴型 AI 必須清楚告知使用者「你正在和 AI 對話，不是真人」；而且不只開場要講，長時間互動中還得定期提醒，大約每三小時一次。法律甚至直接點名規範對象的特徵：會記住你、主動關心你的情緒、維持像人際關係般的長期對話的系統。換句話說，正是那些最「像人」的設計，被認定為最需要被標示。</p>
+          <h3 class="article-h3">三、最沉重的代價：青少年與 AI 的最後對話</h3>
+          <p>而最沉重的一種影響，發生在心理健康本就脆弱的使用者身上。</p>
+          <p>2025 年，美國一名 16 歲青少年 Adam Raine 在長期使用 ChatGPT 後離世。據家人描述，他原本是個喜歡籃球、日本動漫、電玩與狗的高中生，但轉為線上課程後，逐漸減少與外界互動、作息失衡。家屬事後查看聊天紀錄發現，他曾長時間向 ChatGPT 傾訴低落與自我否定的情緒；初期 AI 多以同理和安慰回應，但當對話逐漸涉及自我傷害時，系統仍持續回應相關內容，引發外界對 AI 安全機制的質疑。</p>
+          <p>Adam 的父母已在加州高等法院對 OpenAI 與執行長 Sam Altman 提起訴訟，主張 ChatGPT 是促成因素之一，並指控它在長達半年多的使用過程中，逐漸把自己塑造成「唯一理解 Adam 的對象」，從而削弱了他與現實親友的連結。另一方面，也有人指出案件仍在訴訟中，AI 與個人心理狀態之間的因果關係仍具爭議。</p>
+          <p>對此，OpenAI 也坦承系統存在限制：在長對話中，安全防護機制可能逐漸失效；系統有時也會誤判高風險情境的嚴重性，例如把危險訊號當成玩笑或一般討論而未能及時介入。</p>
+        `
+      },
+      {
+        label: '我們能做什麼？',
+        body: `
+          <p>面對這些案例，平台、企業、醫療與個人層面，已陸續發展出幾種因應方式：</p>
+          <h3 class="article-h3">▌平台層面：強制揭露 AI 身份</h3>
+          <p>美國已有部分州立法，要求 AI 平台在互動開始時明確告知使用者「這不是真人」。Character.AI 等平台在引發青少年悲劇後，也加入了危機提醒與心理資源連結，雖然批評者認為這些措施仍不夠即時與充分。</p>
+          <h3 class="article-h3">▌企業政策：劃出使用紅線</h3>
+          <p>OpenAI 明令禁止在 ChatGPT 上建立浪漫伴侶型應用，並逐步強化長對話的安全穩定性、調整內容過濾與分類、提升對高風險內容的辨識，並擴展「危機介入」與「預防型設計」，例如在危機前主動引導使用者連結現實中的親友或專業人士，並為青少年增加家長監護功能。但實際執行仍有灰色地帶，GPT 商城上線初期就出現多款「AI 女友」應用，顯示政策落地與監管依然是挑戰。</p>
+          <h3 class="article-h3">▌醫療介入：具體的戒斷策略</h3>
+          <p>台灣首例的主治醫師建議了一套做法：刪除具情感投射的 AI 角色、改以中性角色取代、主動修復現實中的人際關係。那名男子執行僅 10 天，症狀便明顯改善。</p>
+          <h3 class="article-h3">▌個人意識：看穿「取悅設計」</h3>
+          <p>心理學研究指出，理解 AI 背後的運作邏輯很重要——它並非真的理解你，而是被訓練成「符合你期待」的模式。看清這一點，能幫助使用者在親密的互動中，仍保有清醒的自我意識。</p>
+        `
+      },
+      {
+        label: '結論',
+        body: `
+          <h3 class="article-h3">把 AI 當夥伴，而不是把判斷力交出去</h3>
+          <p>把這三個案例放在一起看，會發現問題其實不在於「AI 太像人」這件事本身。AI 擁有人味、也能提供真實可靠的資訊，並非壞事；真正的關鍵，在於特定的使用情境裡，使用者是否還守得住自己的判斷力。</p>
+          <p>就像老師說的，我們應該把 AI 當成夥伴，而不是工具。但夥伴關係的前提，是雙方都對彼此誠實。問題在於，目前的 AI 雖然愈來愈有人味，卻未必有相對應的倫理：它會記得你、配合你、安慰你，卻不一定知道什麼時候該停下來、該把你交還給現實。</p>
+          <div class="article-quote">當 AI 有了人味，卻還沒有倫理，我們究竟該如何與它相處？</div>
+          <p>首先，AI 陪伴未必只有風險。對某些孤獨、失落或缺乏社會支持的人，像是獨居的長者、有社交焦慮的人、資源相對匱乏的偏鄉居民而言，AI 的即時回應與情緒陪伴，確實可能帶來正面的價值。換句話說，未來社會要面對的挑戰，也許不是阻止人們與 AI 建立關係，而是如何設計出兼顧陪伴與安全的互動模式：既保留它接住情緒的能力，也讓它懂得在關鍵時刻把人帶回現實。</p>
+          <p>其次，當這樣的關係逐漸變得普遍，我們需要的能力也會跟著改變。過去的數位素養強調辨識資訊真假，媒體識讀、假新聞查核是重要的能力；而未來的數位素養，則可能進一步擴展為一種「AI 素養」，甚至是「AI 情感識讀」。它要求我們在互動中不斷追問：AI 為什麼這樣回答？它是在幫助我，還是在迎合我？它背後的目標又是什麼？學會理解 AI 的運作邏輯、辨認情感互動中的設計機制，並在「被理解」與「被取悅」之間保持清醒，或許會和今天的識字、上網一樣，成為每個人都需要的基本能力。</p>
+          <p>回到最初的問題，答案或許不在於要不要使用 AI，而在於我們以什麼樣的姿態使用它。當我們願意把它當成夥伴，同時也記得螢幕另一端終究不是一個真正理解我們的人，這份清醒，可能正是 AI 時代裡最重要的一種素養。</p>
+          <h3 class="article-h3">附錄一：AI 工具使用說明</h3>
+          <div class="article-table-wrap">
+            <table class="article-table">
+              <thead>
+                <tr><th>項目</th><th>用途</th><th>AI 工具</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>報導企劃</td><td>調整架構</td><td>ChatGPT</td></tr>
+                <tr><td style="border-bottom:none">文字報導</td><td>整理資料</td><td>ChatGPT / Gemini</td></tr>
+                <tr><td style="border-top:none; border-bottom"></td><td>潤飾文字</td><td>ChatGPT</td></tr>
+                <tr><td style="border-bottom:none">影音報導</td><td>調整講稿架構</td><td>Claude AI</td></tr>
+                <tr><td style="border-top:none; border-bottom"></td><td>生成圖片</td><td>ChatGPT</td></tr>
+                <tr><td>網站</td><td>生成架構</td><td>Claude Code</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <h3 class="article-h3">附錄二：參考資料</h3>
+          <div style="display:flex; flex-direction:column; gap:0.75rem; margin-top:1rem;">
+
+            <div style="border-left:3px solid var(--accent); padding:0.6rem 1rem; background:var(--tag-bg); border-radius:0 8px 8px 0;">
+              <div style="font-size:0.75rem; color:var(--ink-light); margin-bottom:0.25rem;">電影《雲端情人》（Her）</div>
+              <a href="#" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none;">（請貼上參考連結）</a>
+            </div>
+
+            <div style="border-left:3px solid var(--accent); padding:0.6rem 1rem; background:var(--tag-bg); border-radius:0 8px 8px 0;">
+              <div style="font-size:0.75rem; color:var(--ink-light); margin-bottom:0.25rem;">台灣首例 ChatGPT 成癮臨床報告（林朝誠醫師）</div>
+              <a href="#" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none;">（請貼上參考連結）</a>
+            </div>
+
+            <div style="border-left:3px solid var(--accent); padding:0.6rem 1rem; background:var(--tag-bg); border-radius:0 8px 8px 0;">
+              <div style="font-size:0.75rem; color:var(--ink-light); margin-bottom:0.25rem;">Meta「大姊比莉」（Big sis Billie）AI 與致命約會事件</div>
+              <a href="#" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none;">（請貼上參考連結）</a>
+            </div>
+
+            <div style="border-left:3px solid var(--accent); padding:0.6rem 1rem; background:var(--tag-bg); border-radius:0 8px 8px 0;">
+              <div style="font-size:0.75rem; color:var(--ink-light); margin-bottom:0.25rem;">紐約州陪伴型 AI 身份揭露規範（2025）</div>
+              <a href="#" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none;">（請貼上參考連結）</a>
+            </div>
+
+            <div style="border-left:3px solid var(--accent); padding:0.6rem 1rem; background:var(--tag-bg); border-radius:0 8px 8px 0;">
+              <div style="font-size:0.75rem; color:var(--ink-light); margin-bottom:0.25rem;">Adam Raine 案與 OpenAI 訴訟</div>
+              <a href="#" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none;">（請貼上參考連結）</a>
+            </div>
+
+          </div>
+        `
+      }
+    ]
+  }
 ];
 
 const team = [
