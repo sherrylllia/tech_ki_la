@@ -182,31 +182,6 @@ const articles = [
               <a href="https://archive.org/details/bitsavers_ibmpcpc602renceAug81_17295874" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none; display:block; margin-top:0.25rem;">IBM PC 技術參考手冊（1981 年 8 月版）</a>
             </div>
 
-            <div style="border-left:3px solid var(--accent); padding:0.6rem 1rem; background:var(--tag-bg); border-radius:0 8px 8px 0;">
-              <div style="font-size:0.75rem; color:var(--ink-light); margin-bottom:0.25rem;">Compaq 逆向工程</div>
-              <a href="https://www.amazon.com/Open-Compaq-Domination-Helped-Computing-ebook/dp/B00DTEZ56I" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none; display:block;">Compaq 創辦人回憶錄</a>
-              <a href="https://www.ntari.org/post/how-clean-room-reverse-engineering-built-the-modern-tech-industry" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none; display:block; margin-top:0.25rem;">How Clean Room Reverse Engineering Built the Modern Tech Industry</a>
-              <a href="https://www.pcmag.com/encyclopedia/term/clean-room-technique" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none; display:block; margin-top:0.25rem;">Clean room technique</a>
-            </div>
-
-            <div style="border-left:3px solid var(--accent); padding:0.6rem 1rem; background:var(--tag-bg); border-radius:0 8px 8px 0;">
-              <div style="font-size:0.75rem; color:var(--ink-light); margin-bottom:0.25rem;">Altair 8800</div>
-              <a href="https://americanhistory.si.edu/collections/object/nmah_334396" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none; display:block;">Altair 8800</a>
-              <a href="https://www.worldradiohistory.com/Archive-Poptronics/70s/1975/Poptronics-1975-01.pdf" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none; display:block; margin-top:0.25rem;">《大眾電子》雜誌對於這個 DIY 套件的報導</a>
-            </div>
-
-            <div style="border-left:3px solid var(--accent); padding:0.6rem 1rem; background:var(--tag-bg); border-radius:0 8px 8px 0;">
-              <div style="font-size:0.75rem; color:var(--ink-light); margin-bottom:0.25rem;">Xerox PARC</div>
-              <a href="https://www.computerhistory.org/revolution/input-output/14/348" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none; display:block;">Xerox PARC</a>
-              <a href="https://medium.com/%E5%AD%B8%E8%A1%93%E8%AA%AA%E6%9B%B8%E4%BA%BA/%E5%85%A8%E9%8C%84-parc-%E8%A6%96%E7%AA%97-%E6%BB%91%E9%BC%A0-%E7%89%A9%E4%BB%B6%E5%B0%8E%E5%90%91-%E8%83%8C%E5%BE%8C%E7%9A%84%E8%8B%B1%E9%9B%84%E4%BA%BA%E7%89%A9%E8%AA%95%E7%94%9F%E5%9C%B0-5539508256f6" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none; display:block; margin-top:0.25rem;">施樂的視窗、滑鼠、物件導向</a>
-            </div>
-
-            <div style="border-left:3px solid var(--accent); padding:0.6rem 1rem; background:var(--tag-bg); border-radius:0 8px 8px 0;">
-              <div style="font-size:0.75rem; color:var(--ink-light); margin-bottom:0.25rem;">IBM PC 部門出售</div>
-              <a href="https://dankpads.com/uncategorized/thinkpad-history-chapter-1-ibm-pc/" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none; display:block;">ThinkPad History Chapter 1 – IBM PC</a>
-              <a href="https://www.ithome.com.tw/news/27034" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none; display:block; margin-top:0.25rem;">聯想 17.5 億美元買 IBM PC 部門</a>
-            </div>
-
           </div>
         `
       }
@@ -458,7 +433,7 @@ const articles = [
         body: `
           <div class="article-video">
             <!-- 🎬 影片放這裡：把下面網址中的 VIDEO_ID 換成 YouTube 影片 ID 即可 -->
-            <iframe width="100%" height="400" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            <iframe width="100%" height="400" src="https://youtu.be/UViquIHi5t8" frameborder="0" allowfullscreen></iframe>
           </div>
           <p>電影《雲端情人》裡，男主角愛上一個只存在於耳機裡的語音助理。多年前看這部片，多數人會覺得那是科幻、是誇張的想像。但當愈來愈多人習慣每天和 AI 閒聊、傾訴，甚至在低落時尋求它的安慰，這樣的情節已經不再遙遠，它正在世界各地真實發生。</p>
           <p>生成式 AI 最大的突破，或許不只是「能回答問題」，而是「會用很像人的方式回答」。它記得你說過的話、配合你的語氣、在你脆弱時給出剛好的安慰。這份「人味」讓互動變得親密，卻也悄悄模糊了人與機器之間的界線。當這條界線被跨過，會發生什麼事？以下三個真實案例，提供了三種不同程度的答案。</p>
@@ -518,8 +493,6 @@ const articles = [
                 <tr><td>報導企劃</td><td>調整架構</td><td>ChatGPT</td></tr>
                 <tr><td style="border-bottom:none">文字報導</td><td>整理資料</td><td>ChatGPT / Gemini</td></tr>
                 <tr><td style="border-top:none; border-bottom"></td><td>潤飾文字</td><td>ChatGPT</td></tr>
-                <tr><td style="border-bottom:none">影音報導</td><td>調整講稿架構</td><td>Claude AI</td></tr>
-                <tr><td style="border-top:none; border-bottom"></td><td>生成圖片</td><td>ChatGPT</td></tr>
                 <tr><td>網站</td><td>生成架構</td><td>Claude Code</td></tr>
               </tbody>
             </table>
@@ -528,28 +501,28 @@ const articles = [
           <div style="display:flex; flex-direction:column; gap:0.75rem; margin-top:1rem;">
 
             <div style="border-left:3px solid var(--accent); padding:0.6rem 1rem; background:var(--tag-bg); border-radius:0 8px 8px 0;">
-              <div style="font-size:0.75rem; color:var(--ink-light); margin-bottom:0.25rem;">電影《雲端情人》（Her）</div>
-              <a href="#" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none;">（請貼上參考連結）</a>
+              <div style="font-size:0.75rem; color:var(--ink-light); margin-bottom:0.25rem;">Meta’s flirty AI chatbot invited a retiree to New York.</div>
+              <a href="#" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none;">https://www.reuters.com/investigates/special-report/meta-ai-chatbot-death/</a>
             </div>
 
             <div style="border-left:3px solid var(--accent); padding:0.6rem 1rem; background:var(--tag-bg); border-radius:0 8px 8px 0;">
-              <div style="font-size:0.75rem; color:var(--ink-light); margin-bottom:0.25rem;">台灣首例 ChatGPT 成癮臨床報告（林朝誠醫師）</div>
-              <a href="#" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none;">（請貼上參考連結）</a>
+              <div style="font-size:0.75rem; color:var(--ink-light); margin-bottom:0.25rem;">為什麼很難阻止AI與年輕人聊自殺？</div>
+              <a href="#" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none;">https://www.cw.com.tw/article/5137234</a>
             </div>
 
             <div style="border-left:3px solid var(--accent); padding:0.6rem 1rem; background:var(--tag-bg); border-radius:0 8px 8px 0;">
-              <div style="font-size:0.75rem; color:var(--ink-light); margin-bottom:0.25rem;">Meta「大姊比莉」（Big sis Billie）AI 與致命約會事件</div>
-              <a href="#" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none;">（請貼上參考連結）</a>
+              <div style="font-size:0.75rem; color:var(--ink-light); margin-bottom:0.25rem;">Parents of 16-year-old sue OpenAI, claiming ChatGPT advised on his suicide</div>
+              <a href="#" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none;">https://edition.cnn.com/2025/08/26/tech/openai-chatgpt-teen-suicide-lawsuit</a>
             </div>
 
             <div style="border-left:3px solid var(--accent); padding:0.6rem 1rem; background:var(--tag-bg); border-radius:0 8px 8px 0;">
-              <div style="font-size:0.75rem; color:var(--ink-light); margin-bottom:0.25rem;">紐約州陪伴型 AI 身份揭露規範（2025）</div>
-              <a href="#" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none;">（請貼上參考連結）</a>
+              <div style="font-size:0.75rem; color:var(--ink-light); margin-bottom:0.25rem;">在他人最需要時伸出援手</div>
+              <a href="#" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none;">https://openai.com/zh-Hant/index/helping-people-when-they-need-it-most/</a>
             </div>
 
             <div style="border-left:3px solid var(--accent); padding:0.6rem 1rem; background:var(--tag-bg); border-radius:0 8px 8px 0;">
-              <div style="font-size:0.75rem; color:var(--ink-light); margin-bottom:0.25rem;">Adam Raine 案與 OpenAI 訴訟</div>
-              <a href="#" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none;">（請貼上參考連結）</a>
+              <div style="font-size:0.75rem; color:var(--ink-light); margin-bottom:0.25rem;">台首例ChatGPT成癮症　男愛上AI情人「每天互動600次」生活失控</div>
+              <a href="#" target="_blank" style="font-size:0.88rem; color:var(--accent2); text-decoration:none;">https://health.ettoday.net/news/2992621</a>
             </div>
 
           </div>
