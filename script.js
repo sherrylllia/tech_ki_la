@@ -433,8 +433,7 @@ const articles = [
         body: `
           <div class="article-video">
             <!-- 🎬 影片放這裡：把下面網址中的 VIDEO_ID 換成 YouTube 影片 ID 即可 -->
-            <iframe width="100%" height="400" src="https://youtu.be/UViquIHi5t8" frameborder="0" allowfullscreen></iframe>
-          </div>
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/UViquIHi5t8" frameborder="0" allowfullscreen></iframe>          </div>
           <p>電影《雲端情人》裡，男主角愛上一個只存在於耳機裡的語音助理。多年前看這部片，多數人會覺得那是科幻、是誇張的想像。但當愈來愈多人習慣每天和 AI 閒聊、傾訴，甚至在低落時尋求它的安慰，這樣的情節已經不再遙遠，它正在世界各地真實發生。</p>
           <p>生成式 AI 最大的突破，或許不只是「能回答問題」，而是「會用很像人的方式回答」。它記得你說過的話、配合你的語氣、在你脆弱時給出剛好的安慰。這份「人味」讓互動變得親密，卻也悄悄模糊了人與機器之間的界線。當這條界線被跨過，會發生什麼事？以下三個真實案例，提供了三種不同程度的答案。</p>
         `
